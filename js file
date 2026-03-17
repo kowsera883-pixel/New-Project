@@ -1,5 +1,5 @@
 (function () {
-  'use strict';s
+  'use strict';
 
   const copied = new Set();
 
