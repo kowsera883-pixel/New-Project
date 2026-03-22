@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  // 🔐 ===== ADVANCED LOCK SYSTEM =====
+  // ===== ADVANCED LOCK SYSTEM =====
   const SECRET = "KOWSER_ULTRA_2026";
 
   function getFingerprint() {
