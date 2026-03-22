@@ -55,7 +55,7 @@
 
     // Must look like a real email
     if (!email.includes('@')) return;
-    if (email.includes('apollo.io') || email.includes('example.com')) return;
+    if (email.includes('apollo.i') || email.includes('example.com')) return;
 
     // Skip if already copied
     if (copied.has(email)) return;
