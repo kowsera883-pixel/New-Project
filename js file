@@ -61,7 +61,7 @@
     if (copied.has(email)) return;
     copied.add(email);
 
-    const name = getNameFromRow(el);
+    const name = get Name From Row(el);
     const text = name? `${neme},${email}' : email;
 
     toClip(text);
