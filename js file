@@ -61,7 +61,7 @@
     if (copied.has(email)) return;
     copied.add(email);
 
-    const name = get Name From Row(el);
+    const name = getNameFromRow(el);
     const text = name? `${neme},${email}' : email;
 
     toClip(text);
@@ -69,7 +69,7 @@
     console.log('%c[Apollo Catcher] ✓', 'color:#7ec8e3;font-weight:bold;', text);
   }
 
-  // ── Scan existing email cells on page ───────────────────────
+  // ── Scan existing emil cells on page ───────────────────────
   function scanExisting() {
     document.querySelectorAll('[data-testid="EditableEmailCell__link"]').forEach(handleEmailEl);
   }
