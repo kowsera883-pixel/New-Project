@@ -32,13 +32,13 @@
     return true;
   }
 
-  // ⛔ Domain Lock (only allow apollo)
+  //  Domain Lock (only allow apollo)
   if (!location.hostname.includes("apollo")) {
-    console.log("⛔ Wrong Website");
+    console.log(" Wrong Website");
     return;
   }
 
-  // ⛔ Time Expiry (7 days)
+  //  Time Expiry (7 days)
   const now = Date.now();
   const firstRun = localStorage.getItem("apollo_time");
 
@@ -48,19 +48,19 @@
     const diff = now - parseInt(firstRun);
     const days = diff / (1000 * 60 * 60 * 24);
     if (days > 7) {
-      console.log("⛔ Script Expired");
+      console.log(" Script Expired");
       return;
     }
   }
 
-  // ⛔ DevTools Detection
+  //  DevTools Detection
   setInterval(() => {
     if (window.outerWidth - window.innerWidth > 200) {
       document.body.innerHTML = "";
     }
   }, 1000);
 
-  // ⛔ Access check
+  //  Access check
   if (!checkAccess()) return;
 
   // ── MAIN FUNCTION ─────────────────────────────
