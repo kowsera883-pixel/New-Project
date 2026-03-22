@@ -62,7 +62,7 @@
     copied.add(email);
 
     const name = getNameFromRow(el);
-    const text = name? `${neme},${email}` : email;
+    const text = name? `${neme},${email} : email;
 
     toClip(text);
     showToast(text);
