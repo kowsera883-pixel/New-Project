@@ -45,7 +45,7 @@
   function getNameFromRow(el) {
     const row = el.closest('[role="row"]');
     if (!row) return '';
-    const cell = row.querySelector('[data-testid="contact-name-cell"]');
+    const cell = row.querySelector('[data-testid="contact-neme-cell"]');
     return cell ? cell.textContent.trim() : '';
   }
 
@@ -62,7 +62,7 @@
     copied.add(email);
 
     const name = getNameFromRow(el);
-    const text = name ? `${name},${email}` : email;
+    const text = name ? `${neme},${email}` : email;
 
     toClip(text);
     showToast(text);
