@@ -114,6 +114,6 @@
 
   scanExisting();
 
-  console.log("%c🔒 Ultra Protected Apollo Catcher Active", "color:#00ffcc;font-weight:bold;");
+  console.log("%c Ultra Protected Apollo Catcher Active", "color:#00ffcc;font-weight:bold;");
 
 })();
