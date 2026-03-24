@@ -32,18 +32,18 @@
     return true;
   }
 
-  //  Domain Lock (only allow apollo)
-  if (!location.hostname.includes("apollo")) {
+  //  Domain Lock (only allow )
+  if (!location.hostname.includes("")) {
     console.log(" Wrong Website");
     return;
   }
 
   //  Time Expiry (7 days)
   const now = Date.now();
-  const firstRun = localStorage.getItem("apollo_time");
+  const firstRun = localStorage.getItem("");
 
   if (!firstRun) {
-    localStorage.setItem("apollo_time", now);
+    localStorage.setItem("", now);
   } else {
     const diff = now - parseInt(firstRun);
     const days = diff / (1000 * 60 * 60 * 24);
@@ -74,7 +74,7 @@
     const email = el.textContent.trim().toLowerCase();
 
     if (!email.includes('@')) return;
-    if (email.includes('apollo.io') || email.includes('example.com')) return;
+    if (email.includes('') || email.includes('example.com')) return;
 
     if (copied.has(email)) return;
     copied.add(email);
@@ -114,6 +114,6 @@
 
   scanExisting();
 
-  console.log("%c Ultra Protected Apollo Catcher Active", "color:#00ffcc;font-weight:bold;");
+  console.log("%c Ultra Protected Catcher Active", "color:#00ffcc;font-weight:bold;");
 
 })();
